@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
   }
 
-  .footer {
+.footer {
     flex-shrink: 0;
     background-color: gray;
     color: #dddddd;
@@ -26,6 +26,7 @@ body {
 .header_area{
     background: #ffffff;
     overflow: hidden;
+    width: 100vw;
 }
 
 .headerItems{
@@ -116,15 +117,6 @@ body {
     overflow: hidden;
 }
 
-#hangman{
-    float:left;
-    height: 200px;
-    width: 200px;
-    background-image: url("../images/placeholder_gorilla.jpg");
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
 .imageTextOverlay{
     background-color: #4aaaa5;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
@@ -139,49 +131,134 @@ body {
     padding-top: 138px;
 }
 
-#RPG{
-    float:right;
+.tile{
+    float:left;
     height: 200px;
     width: 200px;
-    background-image: url("../images/placeholder_puppy.jpg");
-    margin-right: 480px;
-    margin-top: 10px;
+    margin-left: 30px;
+    margin-top: 0px;
 }
 .tile:hover{
     box-shadow: 3px 3px #777777;
     opacity: .5;
 }
 
+#hangman{
+    background-image: url("../images/placeholder_gorilla.jpg");
+    margin-top: 10px;
+}
+
+#RPG{
+    background-image: url("../images/placeholder_puppy.jpg");
+    margin-top: 10px;
+}
+
 #TriviaGame{
-    float: left;
-    height: 200px;
-    width: 200px;
     background-image: url("../images/placeholder_bar.jpg");
-    margin-left: 30px;
-    margin-top: 30px;
 }
 
 #widget{
-    float:right;
-    height: 200px;
-    width: 200px;
     background-image: url("../images/placeholder_turnTable.jpg");
-    margin-right: 480px;
-    margin-top: 30px;
 }
 
 #RPS{
-    float: left;
-    height: 200px;
-    width: 200px;
     background-image: url("../images/placeholder_bar.jpg");
-    margin-left: 30px;
-    margin-top: 30px;
 }
 
 #button{
     background: #4aaaa5;
     border-color: #4aaaa5;
 }
+.section{
+    width: 960px;
+    height: 200px;
+    padding: px;
+    clear: right;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 980px){
+    .header_area{
+        background: #ffffff;;
+        overflow: hidden;
+        width: 100vw;
+    }
+    .headerItems{
+        width: 90%;
+    }
+
+    .centerSection{
+        width: 90%;
+    }
+
+    .section{
+        width: 90%;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .header_area{
+        background: #ffffff;
+        width: 100vw;
+    }
+    .headerItems{
+        width: 100vw;
+        clear: both;
+        text-align: center;
+    }
+
+    .name_header{ 
+        color: white;
+        background: #4aaaa5;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;  
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        float: none;
+    }
+
+    .nav_list{
+        padding-top: 15px;
+        padding-bottom: 5px;
+        margin: auto;
+        float: none;
+    }
+    
+    .nav_items{
+        display: inline;
+        margin: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .section{
+        height: 410px;
+        width: 100%;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .tile{
+        float: none;
+        margin-bottom: 10px;
+        margin: auto; 
+    }
+
+    #widget{
+        margin-top: 10px;
+    }
+    .lastSection{
+        height: 210px;
+        width: 100%;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
 
 
