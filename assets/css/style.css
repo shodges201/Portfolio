@@ -182,15 +182,24 @@ h2{
     .main-headers{
         width: 80%;
         font-size: 60px;
-    }
+    } 
 }
 
 @media only screen and (max-width: 640px){
     .main-headers{
         width: 80%;
     }
-
+    .white-color{
+        font-size: 10px;
+    }
+    .black-color{
+        font-size: 10px;
+    }
+    #nav-bar{
+        left: 90%;
+    }
 }
+
 
 
 

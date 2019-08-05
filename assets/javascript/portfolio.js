@@ -76,14 +76,35 @@
     var body = document.body;
     var docEl = document.documentElement;
     var volatility = 0;
+    var text;
 
-    var text = new Blotter.Text("Scott Hodges", {
-        family : "'Montserrat', 'sans-serif'",
-        size : 100,
-        fill : "#e6e6e6",
-        paddingLeft: 100,
-        paddingRight: 100,
-    });
+    if($(window).width() > 980){
+        text = new Blotter.Text("Scott Hodges", {
+            family : "'Montserrat', 'sans-serif'",
+            size : 100,
+            fill : "#e6e6e6",
+            paddingLeft: 100,
+            paddingRight: 100,
+        });
+    }
+    else if($(window).width() > 640){
+        text = new Blotter.Text("Scott Hodges", {
+            family : "'Montserrat', 'sans-serif'",
+            size : 60,
+            fill : "#e6e6e6",
+            paddingLeft: 60,
+            paddingRight: 60,
+        });
+    }
+    else{
+        text = new Blotter.Text("Scott Hodges", {
+            family : "'Montserrat', 'sans-serif'",
+            size : 30,
+            fill : "#e6e6e6",
+            paddingLeft: 30,
+            paddingRight: 30,
+        });
+    }
 
     var material = new Blotter.LiquidDistortMaterial();
     material.uniforms.uSpeed.value = 0.5;
@@ -115,7 +136,6 @@
     var to = undefined;
 
     $(window).resize(function(){
-        
         $('#center-text').css
         ({
         'position': 'absolute',
