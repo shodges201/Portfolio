@@ -176,6 +176,11 @@ h2{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+#hide{
+    z-index: -1;
+    display: none;
+}
+
 @media only screen and (max-width: 980px){
     .main-headers{
         width: 80%;
