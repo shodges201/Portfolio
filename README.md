@@ -4,7 +4,7 @@ The deployed web page for my personal portfolio can be found here: https://shodg
 
 This project is used to highlight my accomplishments, and was created using:
 
-*HTML 
+* HTML 
 *CSS 
 *javascript 
 *jquery
