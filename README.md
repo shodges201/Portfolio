@@ -6,7 +6,7 @@ This project is used to highlight my accomplishments, and was created using:
 
 * HTML 
 * CSS 
-* javascript 
-* jquery
-* bootstrap 
-* blotter.js.
+* Javascript 
+* Jquery
+* Bootstrap 
+* Blotter.js.
