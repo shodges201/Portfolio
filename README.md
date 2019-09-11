@@ -1,3 +1,12 @@
-# Responsive-Portfolio
+# Portfolio
 
-The deployed web page for my personal portfolio can be found here: https://shodges201.github.io/Portfolio/
+The deployed web page for my personal portfolio can be found here: https://shodges201.github.io/Portfolio/.
+
+This project is used to highlight my accomplishments, and was created using:
+
+* HTML 
+* CSS 
+* Javascript 
+* Jquery
+* Bootstrap 
+* Blotter.js.
