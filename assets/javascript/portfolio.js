@@ -4,8 +4,7 @@
         'top': ($('#background-video').height() / 2),
         'left': '50%'
         }); 
-    console.log((($('#background-video').height() / 2) - ($('#center-text').height() / 2)).toString()+'px');
-    
+
     $(window).scroll(function(){
         var whitePos = $("#about-container").offset().top;
         var whiteHeight = $("#about-container").height();
@@ -16,7 +15,6 @@
         var contactPos = $("#contact").offset().top;
 
         if(projectsPos > $("#background-video").height()) {
-            console.log("here");
             $('#projects').addClass('black-color');
             $('#projects').removeClass('white-color');
         }
@@ -33,7 +31,6 @@
             $('#about').removeClass('black-color');
         }
         if(contactPos > $("#background-video").height()) {
-            console.log("here");
             $('#contact').addClass('black-color');
             $('#contact').removeClass('white-color');
         }
@@ -49,7 +46,6 @@
     })
 
     $("#about").on("click", function(){
-        console.log("clicked");
         $("html, body").animate({
             scrollTop: $("#about-container").offset().top - 50},
             'slow');
@@ -57,14 +53,12 @@
 
 
     $("#projects").on("click", function(){
-        console.log("clicked");
         $("html, body").animate({
             scrollTop: $("#projects-container").offset().top - 50},
             'slow');
     });
 
     $("#contact").on("click", function(){
-        console.log("clicked");
         $("html, body").animate({
             scrollTop: $("#contact-me-container").offset().top - 50},
             'slow');
@@ -142,20 +136,14 @@
         'top': ($('#background-video').height() / 2),
         'left': '50%'
         }); 
-        console.log((($('#background-video').height() / 2) - ($('#center-text').height() / 2)).toString()+'px');
     });
 
     $("#center-text").mousemove(function(event){
         clearInterval(to);
         var docScrolls = {left : body.scrollLeft + docEl.scrollLeft, top : body.scrollTop + docEl.scrollTop};
-        //console.log(docScrolls);
-        console.log(event);
         var relmousepos = {x : event.originalEvent.x - docScrolls.left, y : event.originalEvent.y - docScrolls.top };
-        console.log(relmousepos);
         var mouseDistance = MathUtils.distance(lastMousePosition.x, relmousepos.x, lastMousePosition.y, relmousepos.y);
-        console.log(mouseDistance);
         volatility = MathUtils.lerp(volatility, Math.min(MathUtils.lineEq(0.9, 0, 100, 0, mouseDistance),0.9), 0.05);
-        console.log(volatility* 2);
         material.uniforms.uVolatility.value = 1 * volatility;
         lastMousePosition = {x: relmousepos.x, y: relmousepos.y};
         material.needsUpate = true;
@@ -170,7 +158,6 @@
         }
         material.uniforms.uVolatility.value = 1 * volatility;
         material.needsUpate = true;
-        console.log(volatility);
     }
 
     $(".social-media").on("click", function(){
