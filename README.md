@@ -7,6 +7,9 @@ The deployed web page for my personal portfolio can be found here: https://shodg
 ## Project Intro/Objective
 The purpose of this project is to bring attention to my other works, and show off what I've made recently. It also gave me the opportunity to show off some of what I've learned as far as manipulating HTML, CSS, Javascript and Jquery to create a static webpage as far as content, but still be reactive to user scrolling, mouse movements, and of course clicks. 
 
+![Preview Image](/assets/images/portfolio.png)
+Format: ![Alt Text](url)
+
 ### Technologies 
 * HTML 
 * CSS 
