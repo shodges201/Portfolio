@@ -49,11 +49,27 @@ h2{
     color: black;
 }
 
+#contact-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#email{
+    height: 50px;
+    width: 50px;
+}
+
+.contact-options{
+    justify-self: center;
+    text-align: center;
+}
+
 .social-media{
     height: 50px;
     width: 50px;
     cursor: pointer;
-    margin-right: 10px;
+    justify-self: center;
 }
 
 #about-me-header{
@@ -153,12 +169,6 @@ h2{
     margin-bottom: 0px;
 }
 
-#email{
-    width: 50px;
-    height: 50px;
-}
-
-
 .nav_list{
     float: right;
     padding-top: 30px;
@@ -179,6 +189,14 @@ h2{
 #hide{
     z-index: -1;
     display: none;
+}
+
+#list-container{
+    color: black;
+}
+
+.list-item{
+    display: list-item;
 }
 
 @media only screen and (max-width: 980px){
