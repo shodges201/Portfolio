@@ -9,6 +9,10 @@ $('#center-text').css
         'left': '50%'
     });
 
+if($(window).width() < 640){
+    $("#nav-bar").empty();
+}
+
 function resize() {
     $("#center-text").children().remove();
     if ($(window).width() > 980) {
