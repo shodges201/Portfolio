@@ -55,6 +55,10 @@ h2{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#projects-note{
+    margin-top: 15px;
+}
+
 #email{
     height: 50px;
     width: 50px;
