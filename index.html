@@ -42,8 +42,8 @@
     <div id="about-container">
         <div id="about-text-container">
             <h1 class="main-headers">About Me </h1>
-            <p id="about-text">
-                I am a Software-Engineer and Full-Stack developer, and I am versed in programming languages: JavaScript,
+            <p class="description-text" id="about-text">
+                I am a Software-Engineer/Full-Stack developer looking for employment. I am versed in programming languages: JavaScript,
                 Java, Python, C++, and C.
                 I also have experience with front-end technologies such as: HTML5, CSS3, SASS/SCSS,
                 Boostrap CSS, Materialize CSS, JavaScript(ES5 and ES6), Jquery, Handlbars, and React.js. I am also
@@ -64,36 +64,53 @@
 
     <div id="projects-container">
         <h1 id="title" class="main-headers">Projects </h1>
-        <h5 id="projects-note" class="main-headers">To find out more about these projects or just to see the code for a project 
-            click the GitHub icon next to the project name,
-            or if available select the website icon to see the deployed project.  </h5>
+
+        <div id="healthy-living-container" class="project-container">
+            <h2 class="subheader">Healthy Living:
+                <img class="social-media" src="assets/images/github-icon.png"
+                    data-url="https://github.com/shodges201/healthy-living">
+                <img class="social-media" src="assets/images/web-icon.png"
+                    data-url="https://healthily-living.herokuapp.com/">
+            </h2>
+            <p id="trivia-description" class="project-description description-text">
+                A SPA created for the purposes of tracking health indicators like cholesterol and resting heart rate.
+                Created using <strong>React.js</strong> as the front-end framework along with <strong>TypeScript</strong> for type checking
+                and <strong>Material-UI</strong> as a component library. The back-end was created using <strong>Node/Express</strong> for the
+                server and routing, along with <strong>MongoDB/Mongoose</strong> for the database itself and the database models.
+
+            </p>
+            <img id="trivia-image" class="project-image" src="assets/images/Healthy-Living-Photo.png">
+        </div>
+
+        <div id="ski-map-container" class="project-container">
+            <h2 class="subheader">IOT Reactive Ski Map and RESTful API:
+                <img class="social-media" src="assets/images/github-icon.png"
+                    data-url="https://github.com/shodges201/SkiMap">
+            </h2>
+            <p id="trivia-description" class="project-description description-text">
+                An IOT project with the goal of creating a physical map that I could hang on the wall that would react to real time ski resort trail/lift data.
+                I used a <strong>Node</strong> server and <strong>Cheerio</strong>(A web scraping tool), to scrape the info I needed from the resorts website and
+                used <strong>Express</strong> to create the REST API that would make the data available. I used an <strong>Arduino</strong> to 
+                access the data and sent the data to <strong>WS2812b LEDs</strong> I had glued to a wooden board behind the map. The end result looks as seen below.
+
+            </p>
+            <img id="map-gif" class="project-image" src="assets/images/map.gif">
+        </div>
+
+
 
         <div id="genetic-algorithm-container" class="project-container">
             <h2 class="subheader">Genetic Algorithm for Breaking Substitution Cyphers:
                 <img class="social-media" src="assets/images/github-icon.png"
                     data-url="https://github.com/shodges201/Genetic-Algorithm-Substitution-Cypher">
             </h2>
-            <p id="GA-description" class="project-description">An AI project completed using Python to break
+            <p id="GA-description" class="project-description description-text">An <strong>AI</strong> project completed using <strong>Python</strong> to break
                 substitution cyphers using a training text of significant
                 length to create a bigram table, or a table of the frequency of the occurence of adjacent characters
-                along with the Genetic Algorithm. More information can be found by
+                along with the <strong>Genetic Algorithm</strong>. More information can be found by
                 using the GitHub link, as well as a full write-up of the results of experimentation along with an
                 in-depth explanation of the design and methodology.
             </p>
-        </div>
-
-        <div id="sabotage-container" class="project-container">
-            <h2 class="subheader">Sabotage:
-                <img class="social-media" src="assets/images/github-icon.png"
-                    data-url="https://github.com/shodges201/Sabotage">
-                <img class="social-media" src="assets/images/web-icon.png"
-                    data-url="https://sabotage-game.herokuapp.com/">
-            </h2>
-            <p id="trivia-description" class="project-description">A game which pits the user against time, and forces
-                them to think and act quickly to avoid losing points for stagnation.
-                Created using MongoDB, Express.js, React, Node.js, Passport.js, and React Material UI.
-            </p>
-            <img id="trivia-image" class="project-image" src="assets/images/sabotage.png">
         </div>
 
         <div id="local-container" class="project-container">
@@ -103,9 +120,8 @@
                 <img class="social-media" src="assets/images/web-icon.png"
                     data-url="https://keep-it-local.herokuapp.com/">
             </h2>
-            <p id="local-description" class="project-description">
-                Keep-It-Local is a project that uses Express, Node.js, Passport.js, Moment.js, node-geocoder, turf.js,
-                the Geolocater API, JQuery, Javascript, Materialize, CSS, and HTML.
+            <p id="local-description" class="project-description description-text">
+                Keep-It-Local is a project that uses <strong>Express, Node.js, Passport.js, Moment.js, node-geocoder, turf.js, the Geolocater API, JQuery, Javascript, Materialize, CSS, and HTML.</strong>
                 Use username: <i>username</i>, and password: <i>password</i> for access with our test account.
                 The project allows users to create accounts, as well as login anonymously and create, and find local
                 events within a defined 30 mile radius, as well as
@@ -119,13 +135,13 @@
         <div id="musify-container" class="project-container">
             <h2 class="subheader">Project Musify:
                 <img class="social-media" src="assets/images/github-icon.png"
-                    data-url="https://github.com/shodges201/Project1">
+                    data-url="https://github.com/shodges201/Musify">
                 <img class="social-media" src="assets/images/web-icon.png"
-                    data-url="https://shodges201.github.io/Project1/">
+                    data-url="https://shodges201.github.io/Musify/">
             </h2>
-            <p id="musify-description" class="project-description">Project Musify was a front end project completed in
+            <p id="musify-description" class="project-description description-text">Project Musify was a front end project completed in
                 nine days at the Rutgers coding bootcamp with a team of three other students. Project Musify utilizes
-                HTML5, CSS, Materialize, Javascript, JQuery, the Geolocater API, and the TicketMaster API
+                <strong>HTML, CSS, Materialize, Javascript, JQuery, the Geolocater API, and the TicketMaster API</strong>
                 to bring artist, concert and venue information to the user with ease.</p>
             <img id="musify-image" class="project-image" src="assets/images/Musify.png">
         </div>

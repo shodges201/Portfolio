@@ -133,10 +133,12 @@ h2{
 }
 
 #about-text{
+    margin-top: 40px;
+}
+
+.description-text{
     line-height: 2;
     color: black;
-    margin-top: 40px;
-    font-family: neuzeit-grotesk-extra-conden, sans-serif;
     text-align: justify;
 }
 .subheader{
